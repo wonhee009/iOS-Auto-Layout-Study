@@ -49,7 +49,7 @@ class ViewController: UITableViewController {
         totalLabel.centerXAnchor.constraint(equalTo: footerView.centerXAnchor).isActive = true
         
         let total = friends.reduce(0) { (prev, friend) -> Int in
-            let (key, value) = friend
+            let (_, _) = friend
             return prev + friend.value.count
         }
         totalLabel.text = "\(total)개의 연락처"
