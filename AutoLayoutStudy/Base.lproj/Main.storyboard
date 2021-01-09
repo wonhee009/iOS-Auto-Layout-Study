@@ -11,26 +11,17 @@
         <scene sceneID="7YW-jI-bsd">
             <objects>
                 <tableViewController id="yE3-kh-WeV" customClass="ViewController" customModule="AutoLayoutStudy" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="TQ8-0b-K16">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="TQ8-0b-K16">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="iyi-Nc-0gN">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iyi-Nc-0gN" id="b56-uW-jNG">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="yE3-kh-WeV" id="fPd-bH-3cI"/>
                             <outlet property="delegate" destination="yE3-kh-WeV" id="DrL-Om-eqA"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="연락처" id="QgJ-dL-UUG">
+                        <barButtonItem key="leftBarButtonItem" title="그룹" id="SAr-7t-MDh"/>
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="tyE-X1-QOW"/>
                     </navigationItem>
                 </tableViewController>

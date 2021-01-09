@@ -13,6 +13,7 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
         
         setUpNavigationBar()
+        registCell()
     }
     
     // MARK: - setup
@@ -20,10 +21,24 @@ class ViewController: UITableViewController {
         let searchBar = UISearchController()
         self.navigationItem.searchController = searchBar
         self.navigationItem.hidesSearchBarWhenScrolling = true
-        
-        let groupNavigationButton = UIBarButtonItem(title: "그룹", style: .plain, target: self, action: nil)
-        self.navigationItem.leftBarButtonItem = groupNavigationButton
     }
-
+    
+    private func registCell() {
+        self.tableView.register(UINib(nibName: "MyTableViewCell", bundle: nil), forCellReuseIdentifier: "myCell")
+        self.tableView.register(UINib(nibName: "FriendTableViewCell", bundle: nil), forCellReuseIdentifier: "friend")
+    }
+    
+    // MARK: - dataSource
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 30
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") as? MyTableViewCell
+            return cell ?? UITableViewCell()
+        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "friend") as? FriendTableViewCell
+        return cell ?? UITableViewCell()
+    }
 }
-
