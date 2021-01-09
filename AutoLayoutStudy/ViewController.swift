@@ -41,6 +41,16 @@ class ViewController: UITableViewController {
     
     private func setUpFooter() {
         let footerView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50))
+        
+        let lineView = UIView()
+        footerView.addSubview(lineView)
+        lineView.translatesAutoresizingMaskIntoConstraints = false
+        lineView.backgroundColor = UIColor.systemGray5
+        lineView.heightAnchor.constraint(equalToConstant: 1).isActive = true
+        lineView.topAnchor.constraint(equalTo: footerView.topAnchor).isActive = true
+        lineView.leftAnchor.constraint(equalTo: footerView.leftAnchor, constant: 20).isActive = true
+        lineView.rightAnchor.constraint(equalTo: footerView.rightAnchor, constant: -12).isActive = true
+        
         let totalLabel = UILabel()
         footerView.addSubview(totalLabel)
         totalLabel.translatesAutoresizingMaskIntoConstraints = false
