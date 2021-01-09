@@ -18,6 +18,8 @@
 		28D9E79425A9E62C0099201E /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9E79225A9E62C0099201E /* FriendTableViewCell.swift */; };
 		28D9E79525A9E62C0099201E /* FriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D9E79325A9E62C0099201E /* FriendTableViewCell.xib */; };
 		28D9E79925A9EA980099201E /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9E79825A9EA980099201E /* Friend.swift */; };
+		28D9E7A625A9FD910099201E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9E7A425A9FD910099201E /* SecondViewController.swift */; };
+		28D9E7A725A9FD910099201E /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D9E7A525A9FD910099201E /* SecondViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		28D9E79225A9E62C0099201E /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		28D9E79325A9E62C0099201E /* FriendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendTableViewCell.xib; sourceTree = "<group>"; };
 		28D9E79825A9EA980099201E /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		28D9E7A425A9FD910099201E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		28D9E7A525A9FD910099201E /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 		26F6C46D2593029E00F7F27A /* AutoLayoutStudy */ = {
 			isa = PBXGroup;
 			children = (
+				28D9E7A325A9FD7C0099201E /* Second */,
 				28D9E79725A9EA8C0099201E /* Data */,
 				28D9E78B25A9E5030099201E /* Cell */,
 				26F6C46E2593029E00F7F27A /* AppDelegate.swift */,
@@ -96,6 +101,15 @@
 				28D9E79825A9EA980099201E /* Friend.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		28D9E7A325A9FD7C0099201E /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				28D9E7A425A9FD910099201E /* SecondViewController.swift */,
+				28D9E7A525A9FD910099201E /* SecondViewController.xib */,
+			);
+			path = Second;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +171,7 @@
 			files = (
 				28D9E79525A9E62C0099201E /* FriendTableViewCell.xib in Resources */,
 				26F6C47B259302A000F7F27A /* LaunchScreen.storyboard in Resources */,
+				28D9E7A725A9FD910099201E /* SecondViewController.xib in Resources */,
 				28D9E78F25A9E5190099201E /* MyTableViewCell.xib in Resources */,
 				26F6C478259302A000F7F27A /* Assets.xcassets in Resources */,
 				26F6C4762593029E00F7F27A /* Main.storyboard in Resources */,
@@ -174,6 +189,7 @@
 				28D9E78E25A9E5190099201E /* MyTableViewCell.swift in Sources */,
 				28D9E79425A9E62C0099201E /* FriendTableViewCell.swift in Sources */,
 				28D9E79925A9EA980099201E /* Friend.swift in Sources */,
+				28D9E7A625A9FD910099201E /* SecondViewController.swift in Sources */,
 				26F6C46F2593029E00F7F27A /* AppDelegate.swift in Sources */,
 				26F6C4712593029E00F7F27A /* SceneDelegate.swift in Sources */,
 			);
