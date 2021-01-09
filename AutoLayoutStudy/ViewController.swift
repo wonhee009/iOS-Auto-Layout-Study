@@ -16,6 +16,7 @@ class ViewController: UITableViewController {
         setUpData()
         setUpNavigationBar()
         registCell()
+        setUpFooter()
     }
     
     // MARK: - data
@@ -36,6 +37,24 @@ class ViewController: UITableViewController {
     private func registCell() {
         self.tableView.register(UINib(nibName: "MyTableViewCell", bundle: nil), forCellReuseIdentifier: "myCell")
         self.tableView.register(UINib(nibName: "FriendTableViewCell", bundle: nil), forCellReuseIdentifier: "friend")
+    }
+    
+    private func setUpFooter() {
+        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50))
+        let totalLabel = UILabel()
+        footerView.addSubview(totalLabel)
+        totalLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        totalLabel.centerYAnchor.constraint(equalTo: footerView.centerYAnchor).isActive = true
+        totalLabel.centerXAnchor.constraint(equalTo: footerView.centerXAnchor).isActive = true
+        
+        let total = friends.reduce(0) { (prev, friend) -> Int in
+            let (key, value) = friend
+            return prev + friend.value.count
+        }
+        totalLabel.text = "\(total)개의 연락처"
+        
+        tableView.tableFooterView = footerView
     }
     
     // MARK: - dataSource
