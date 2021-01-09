@@ -17,6 +17,7 @@
 		28D9E78F25A9E5190099201E /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D9E78D25A9E5190099201E /* MyTableViewCell.xib */; };
 		28D9E79425A9E62C0099201E /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9E79225A9E62C0099201E /* FriendTableViewCell.swift */; };
 		28D9E79525A9E62C0099201E /* FriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D9E79325A9E62C0099201E /* FriendTableViewCell.xib */; };
+		28D9E79925A9EA980099201E /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9E79825A9EA980099201E /* Friend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		28D9E78D25A9E5190099201E /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		28D9E79225A9E62C0099201E /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		28D9E79325A9E62C0099201E /* FriendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendTableViewCell.xib; sourceTree = "<group>"; };
+		28D9E79825A9EA980099201E /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		26F6C46D2593029E00F7F27A /* AutoLayoutStudy */ = {
 			isa = PBXGroup;
 			children = (
+				28D9E79725A9EA8C0099201E /* Data */,
 				28D9E78B25A9E5030099201E /* Cell */,
 				26F6C46E2593029E00F7F27A /* AppDelegate.swift */,
 				26F6C4702593029E00F7F27A /* SceneDelegate.swift */,
@@ -85,6 +88,14 @@
 				28D9E79325A9E62C0099201E /* FriendTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		28D9E79725A9EA8C0099201E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				28D9E79825A9EA980099201E /* Friend.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +173,7 @@
 				26F6C4732593029E00F7F27A /* ViewController.swift in Sources */,
 				28D9E78E25A9E5190099201E /* MyTableViewCell.swift in Sources */,
 				28D9E79425A9E62C0099201E /* FriendTableViewCell.swift in Sources */,
+				28D9E79925A9EA980099201E /* Friend.swift in Sources */,
 				26F6C46F2593029E00F7F27A /* AppDelegate.swift in Sources */,
 				26F6C4712593029E00F7F27A /* SceneDelegate.swift in Sources */,
 			);
